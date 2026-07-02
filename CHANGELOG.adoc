@@ -3,6 +3,7 @@
 This file documents all notable changes to https://github.com/devonfw/IDEasy[IDEasy].
 
 == 2026.07.001
+* https://github.com/devonfw/IDEasy/issues/1720[#1720]: Add SoapUI support
 
 Release with new features and bugfixes:
 
