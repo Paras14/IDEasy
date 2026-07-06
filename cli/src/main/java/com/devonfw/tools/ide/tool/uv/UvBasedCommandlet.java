@@ -74,9 +74,9 @@ public abstract class UvBasedCommandlet extends PackageManagerBasedLocalToolComm
         .setProcessMode(ProcessMode.DEFAULT_CAPTURE);
     ProcessContext pc = this.context.newProcess().errorHandling(ProcessErrorHandling.NONE);
     request.setProcessContext(pc);
-    ProcessResult result = runPackageManager(request);
+    ProcessResult result = runPackageManager(request, true);
     if (result.isSuccessful()) {
-      String prefix = packageName + "v";
+      String prefix = packageName + " v";
       for (String line : result.getOut()) {
         if (line.startsWith(prefix)) {
           return VersionIdentifier.of(line.substring(prefix.length()).trim());

@@ -61,7 +61,7 @@ public class UvRepository extends ArtifactToolRepository<UvArtifact, UvArtifactM
   /**
    * @return the registry URL.
    */
-  private String getRegistryUrl() {
+  public String getRegistryUrl() {
     return REGISTRY_URL;
   }
 

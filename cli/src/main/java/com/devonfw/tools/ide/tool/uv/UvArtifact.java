@@ -19,7 +19,7 @@ public final class UvArtifact extends SoftwareArtifact {
    */
   public UvArtifact(String name, String version) {
     super(version);
-    this.name = name;
+    this.name = requireNotEmpty(name, "name");
   }
 
   /**
