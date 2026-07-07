@@ -33,7 +33,7 @@ public class UvRepositoryMock extends UvRepository {
   }
 
   @Override
-  public String getRegistryUrl() {
+  protected String getRegistryUrl() {
 
     return wmRuntimeInfo.getHttpBaseUrl() + "/";
   }
