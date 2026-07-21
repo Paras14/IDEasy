@@ -13,6 +13,6 @@ public record PythonUvListEntry(String version, String implementation) {
    */
   public boolean isCpython() {
 
-    return (this.implementation == null) || "cpython".equalsIgnoreCase(this.implementation);
+    return "cpython".equalsIgnoreCase(this.implementation);
   }
 }
